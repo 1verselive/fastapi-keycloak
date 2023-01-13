@@ -28,8 +28,9 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "fastapi_keycloak"},
-    packages=setuptools.find_packages(where="fastapi_keycloak"),
-    install_requires=required
+    #package_dir={"": "fastapi_keycloak"},
+    packages=setuptools.find_packages(where="."),
+    install_requires=required,
+    zip_safe=False
     )
 
