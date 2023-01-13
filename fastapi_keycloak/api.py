@@ -133,7 +133,7 @@ class FastAPIKeycloak:
             client_id: str,
             client_secret: str,
             realm: str,
-            admin_client_secret: str,
+            #admin_client_secret: str,
             callback_uri: str,
             admin_client_id: str = "admin-cli",
             timeout: int = 10,
@@ -159,7 +159,7 @@ class FastAPIKeycloak:
         self.admin_client_secret = admin_client_secret
         self.callback_uri = callback_uri
         self.timeout = timeout
-        self._get_admin_token()  # Requests an admin access token on startup
+        #self._get_admin_token()  # Requests an admin access token on startup
 
     @property
     def admin_token(self):
